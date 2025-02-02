@@ -8,6 +8,20 @@ public class linkedlist {
             temp = temp.next;
         }
     }
+    //------given in order------
+    public static void displayrecur(Node head) {
+       if(head==null) return;
+        System.out.print(head.val +" ");
+        display(head.next);
+    }
+
+    //-------display in reverse recursion------
+
+    public static void reversedisplay(Node head){
+        if(head==null) return;
+        reversedisplay(head.next);
+        System.out.print(head.val+ " ");
+    }
         public static class Node{
             int val;
             Node next;
@@ -32,6 +46,8 @@ public class linkedlist {
             d.next = e;
 
             display(a);
+            displayrecur(a);
+            reversedisplay(a);
 
 //
 //        Node temp=a;
