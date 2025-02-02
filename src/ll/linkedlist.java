@@ -22,6 +22,16 @@ public class linkedlist {
         reversedisplay(head.next);
         System.out.print(head.val+ " ");
     }
+
+    public static int size(Node head){
+        int count=0;
+        while(head!=null){
+            count++;
+            head=head.next;
+
+        }
+        return count;
+    }
         public static class Node{
             int val;
             Node next;
@@ -43,11 +53,15 @@ public class linkedlist {
             a.next = b;
             b.next = c;
             c.next = d;
-            d.next = e;
+
 
             display(a);
+            System.out.println();
             displayrecur(a);
+            System.out.println();
             reversedisplay(a);
+            System.out.println();
+            System.out.println(size(a));
 
 //
 //        Node temp=a;
