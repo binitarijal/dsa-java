@@ -56,6 +56,7 @@ public class Insertll {
         ll.insertAtEnd(9);
         ll.insertAtEnd(2);
         ll.insertAtFirst(1);
+        ll.insertAtFirst(3);
         ll.display();
 
     }
